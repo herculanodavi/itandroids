@@ -1,0 +1,21 @@
+{
+  "image": "daviherc/itandroids-humanoid:v0.0.1",
+  "workspaceMount": "source=${localWorkspaceFolder},target=/home/,type=bind",
+  "workspaceFolder": "/home",
+  "onCreateCommand": "bash -i /home/.devcontainer/onCreateCommand.sh",
+  "remoteEnv": { "LC_ALL": "C" },
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "cmake.configureOnOpen": false,
+        "cmake.showOptionsMovedNotification": false,
+        "C_Cpp.default.compilerPath": "/opt/toolchains/zephyr-sdk-0.16.3/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc",
+        "C_Cpp.default.compileCommands": "/zephyr-training/app/build/compile_commands.json",
+        "git.autofetch": false
+      },
+      "extensions": [
+        "ms-vscode.cpptools-extension-pack"
+      ]
+    }
+  }
+}

@@ -1,0 +1,6 @@
+[submodule "itandroids-humanoide"]
+	path = itandroids-humanoide
+	url = https://gitlab.com/itandroids/projects/humanoid/itandroids-humanoide
+[submodule "itandroids-lib"]
+	path = itandroids-lib
+	url = git@gitlab.com:itandroids/projects/lib/itandroids-lib.git
